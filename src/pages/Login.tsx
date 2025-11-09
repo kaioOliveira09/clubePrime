@@ -2,23 +2,26 @@ import React, { useState } from 'react';
 // @ts-ignore
 import './login.css'; 
 
+import { X, Instagram, Youtube, Linkedin } from 'lucide-react';
 
-import { Figma, X, Instagram, Youtube, Linkedin } from 'lucide-react';
-
+// Componente principal de Login
 export function Login() {
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
 
+  // Lógica de login
   function handleLogin(e: React.FormEvent) {
     e.preventDefault();
-    alert(`Email: ${email}\nSenha: ${senha}`);
+    console.log(`Tentativa de Login:\nEmail: ${email}\nSenha: ${senha}`);
+    // Adicionar sua lógica de autenticação real aqui
   }
 
   return (
     <div className="full-page-layout">
       <header className="page-header">
         
-        <Figma size={28} className="header-logo" /> 
+        {/* LOGO ATUALIZADA: Referenciando a imagem logo.svg */}
+        <img src="/img/logo.svg" alt="Logo da Empresa" className="header-logo-img" /> 
       </header>
 
       <main className="main-content">
