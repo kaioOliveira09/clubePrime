@@ -1,0 +1,212 @@
+/* Reset geral */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Layout principal */
+.full-page-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: white;
+  font-family: sans-serif;
+  color: #333;
+}
+
+/* Cabeçalho */
+.page-header {
+  background-color: #271df3; /* cinza atualizado */
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Ícone do cabeçalho */
+.header-logo svg {
+  color: white;
+  width: 24px;
+  height: 24px;
+}
+
+/* Conteúdo principal (container externo da moldura) */
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+/* Moldura cinza */
+.login-wrapper {
+  background-color: #9c9c9c;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Área branca dentro da moldura */
+.login-area {
+  background-color: #ffffff;
+  padding: 60px;
+  box-shadow: 0 0 0 1px #dcdcdc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card de login */
+.login-card {
+  background-color: #f9f9f9;
+  padding: 30px 40px;
+  border-radius: 6px;
+  box-shadow: 0 0 0 1px #e0e0e0;
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.login-card h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #272727;
+}
+
+/* Inputs e rótulos */
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #1E1E1E;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+  color: #555;
+  background-color: #fafafa;
+}
+
+.input-group input::placeholder {
+  color: #aaa;
+}
+
+/* Foco */
+.input-group input:focus {
+  border-color: #66afe9;
+  background-color: #f0f8ff;
+  outline: none;
+}
+
+/* Botão de login */
+.login-button {
+  width: 100%;
+  padding: 12px 15px;
+  background-color:  #d136f5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.login-button:hover {
+  background-color:  #271df3;
+}
+
+/* Rodapé */
+.page-footer {
+  background-color: #f0f0f0;
+  padding: 15px 30px;
+  text-align: right;
+  border-top: 1px solid #ccc;
+  color: #555;
+  position: relative;
+}
+
+.social-icons svg {
+  margin-left: 15px;
+  color: #555555;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.social-icons svg:hover {
+  color: #333;
+}
+
+/* 📱 Responsividade para mobile */
+@media (max-width: 600px) {
+  .page-header {
+    padding: 12px 20px;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+
+  .login-wrapper {
+    padding: 20px;
+  }
+
+  .login-area {
+    padding: 25px;
+  }
+
+  .login-card {
+    padding: 25px 20px;
+    max-width: 90%;
+  }
+
+  .login-card h2 {
+    font-size: 20px;
+  }
+
+  /* Footer fixo no canto inferior direito */
+  .page-footer {
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+
+  .social-icons {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    gap: 12px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 8px 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .social-icons svg {
+    width: 20px;
+    height: 20px;
+    color: #555;
+  }
+}
