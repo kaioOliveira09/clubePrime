@@ -16,7 +16,7 @@ body {
 
 /* Cabeçalho */
 .page-header {
-  background-color: #271df3; /* cinza atualizado */
+  background-color: #271df3; 
   color: white;
   padding: 15px 30px;
   display: flex;
