@@ -6,11 +6,13 @@
   border-radius: 30px;
   padding: 6px 12px;
   width: 500px;
-  transition: box-shadow 0.2s;
+  transition: box-shadow 0.5s;
 }
 
 .search-bar:hover {
   box-shadow: 0 10 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  transition: 0.5s;
 }
 
 .search-bar input {
@@ -18,7 +20,7 @@
   border: none;
   outline: none;
   font-size: 14px;
-  padding: 6px;
+  padding: 4px;
   background: transparent;
 }
 
