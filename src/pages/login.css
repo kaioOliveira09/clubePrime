@@ -15,22 +15,50 @@ body {
 }
 
 /* Cabeçalho */
-.page-header {
-  background-color: #271df3; 
-  color: white;
-  padding: 15px 30px;
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
   display: flex;
   align-items: center;
-  width: 100%;
-  margin: 0;
-  box-sizing: border-box;
+  justify-content: center;
+  background: linear-gradient(270deg, #271df3, #d136f5);
+  background-size: 400% 400%; /* AQUI é importante */
+  animation: gradientMove 8s ease infinite;  
+  color: white;
+  font-weight: bold;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.12),
+    0 2px 2px rgba(0,0,0,0.12),
+    0 4px 4px rgba(0,0,0,0.12),
+    0 8px 8px rgba(0,0,0,0.12),
+    0 16px 16px rgba(0,0,0,0.12);
+}
+
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Ícone do cabeçalho */
-.header-logo svg {
-  color: white;
-  width: 24px;
-  height: 24px;
+.logo {
+  margin-left: 8px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.12),
+    0 2px 2px rgba(0,0,0,0.12),
+    0 4px 4px rgba(0,0,0,0.12),
+    0 8px 8px rgba(0,0,0,0.12),
+    0 16px 16px rgba(0,0,0,0.12) ;
+  border-radius: 50%;
 }
 
 /* Conteúdo principal (container externo da moldura) */

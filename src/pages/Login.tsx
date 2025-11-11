@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-// @ts-ignore
-import './login.css'; 
+
+import './login.css';
 
 import { X, Instagram, Youtube, Linkedin } from 'lucide-react';
 
@@ -13,17 +13,17 @@ export function Login() {
   function handleLogin(e: React.FormEvent) {
     e.preventDefault();
     console.log(`Tentativa de Login:\nEmail: ${email}\nSenha: ${senha}`);
-    
+
   }
 
   return (
     <div className="full-page-layout">
-      <header className="page-header">
-        
-        {/* LOGO */}
-        <img src="/img/logo.svg" alt="Logo da Empresa" className="header-logo-img" /> 
-      </header>
+      <div className='header'>
 
+          {/* LOGO */}
+          <img src="/img/logo.svg" alt="Logo da Empresa" className="logo"  width={60}/>
+        
+      </div>
       <main className="main-content">
         <div className="login-card">
           <h2>Faça o login</h2>
@@ -57,10 +57,10 @@ export function Login() {
 
       <footer className="page-footer">
         <div className="social-icons">
-          <X size={20} /> 
-          <Instagram size={20} /> 
-          <Youtube size={20} /> 
-          <Linkedin size={20} /> 
+          <X size={20} />
+          <Instagram size={20} />
+          <Youtube size={20} />
+          <Linkedin size={20} />
         </div>
       </footer>
     </div>
