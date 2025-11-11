@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import FilterPanel from "../components/FilterPanel";
 import SearchBar from "../components/searchBar";
+// @ts-ignore: allow importing plain CSS without type declarations
 import "./home.css";
 
 export default function Home_logar() {
