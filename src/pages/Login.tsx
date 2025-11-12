@@ -13,13 +13,11 @@ export function Login() {
   function handleLogin(e: React.FormEvent) {
     e.preventDefault();
     console.log(`Tentativa de Login:\nEmail: ${email}\nSenha: ${senha}`);
-    
   }
 
   return (
     <div className="full-page-layout">
       <header className="page-header">
-        
         {/* LOGO */}
         <img src="/img/logo.svg" alt="Logo da Empresa" className="header-logo-img" /> 
       </header>
