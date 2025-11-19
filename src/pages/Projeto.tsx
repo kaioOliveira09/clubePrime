@@ -2,9 +2,9 @@
 
 import React from "react";
 import { Instagram, Linkedin, Youtube, X, Home, Heart } from "lucide-react";
-import styles from "./Perfil.module.css"; 
+import styles from "./Projeto.module.css"; 
 
-export default function PerfilPage() {
+export default function Projeto() {
   return (
     <div className={styles.perfilContainer}>
       {/* Cabeçalho */}
