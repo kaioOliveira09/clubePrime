@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import FilterPanel from "../components/FilterPanel";
 import SearchBar from "../components/searchBar";
 import "./home.css";
+import Projeto from "../components/projeto";
 
 export default function Home_logar() {
     const [scrolled, setScrolled] = useState(false);
@@ -57,21 +58,9 @@ export default function Home_logar() {
                     <FilterPanel />
                 </div>
                 <div className="projeto">
-                    <div className="containner-projeto containner-projeto-1">
-                        <img src="/img/input.png" alt="" width={250} />
-                        <p className="titulo-projeto">titulo</p>
-                        <p>aqui vai a Descrição do projeto do cliente</p>
-                    </div>
-                    <div className="containner-projeto containner-projeto-2">
-                        <img src="/img/input.png" alt="" width={250} />
-                        <p className="titulo-projeto">titulo</p>
-                        <p>aqui vai a Descrição do projeto do cliente</p>
-                    </div>
-                    <div className="containner-projeto containner-projeto-3">
-                        <img src="/img/input.png" alt="" width={250} />
-                        <p className="titulo-projeto">titulo</p>
-                        <p>aqui vai a Descrição do projeto do cliente</p>
-                    </div>
+                    <Projeto />
+                    <Projeto />
+                    <Projeto />
                 </div>
             </div>
             <div className="footer">
