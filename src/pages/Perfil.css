@@ -1,6 +1,4 @@
-/* admin.module.css - COMPLETO E FINALIZADO */
 
-/* ============ CSS RESET GLOBAL ============ */
 body, html {
     margin: 0;
     padding: 0;
@@ -8,7 +6,6 @@ body, html {
     height: 100%;
     overflow-x: hidden; 
 }
-/* =========================================== */
 
 /* = ANIMAÇÃO DE FUNDO DO GRADIENTE = */
 @keyframes gradientMove {
@@ -36,7 +33,7 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* Cores RGB: #d136f5 e #271df3 */
+    
     background: linear-gradient(90deg, #d136f5, #271df3); 
     background-size: 300% 300%;
     animation: gradientMove 10s ease-in-out infinite;
@@ -222,13 +219,13 @@ body, html {
     transform: scale(1.05);
 }
 
-/* Estilo para ícones dentro dos botões */
+/* ícones dentro dos botões */
 .buttonIcon {
     width: 16px;
     height: 16px;
 }
 
-/* ESTILOS PARA OS STATUS DINÂMICOS */
+/* STATUS DINÂMICOS */
 .statusPendente {
     color: #f59e0b; 
     font-weight: 700;
@@ -244,7 +241,7 @@ body, html {
     font-weight: 700;
 }
 
-/* Estilo para botões desabilitados */
+/* botões desabilitados */
 .btnApprove:disabled, 
 .btnDeny:disabled {
     opacity: 0.5;
@@ -255,11 +252,11 @@ body, html {
 /* = RODAPÉ = */
 .pageFooter {
     height: 65px; 
-    /* 🚨 GRADIENTE RGB ADICIONADO AQUI */
+    
     background: linear-gradient(90deg, #d136f5, #271df3); 
     background-size: 300% 300%;
     animation: gradientMove 10s ease-in-out infinite;
-    /* FIM DA ALTERAÇÃO */
+    
     padding: 8px 30px; 
     display: flex;
     justify-content: space-between;

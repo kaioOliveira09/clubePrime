@@ -87,7 +87,7 @@
   gap: 15px;
   width: 100%;
   box-sizing: border-box;
-  overflow-y: auto;  /* Permite scroll apenas no conteúdo */
+  overflow-y: auto; 
 }
 
 /* === CARD PRINCIPAL === */
@@ -283,7 +283,7 @@
   line-height: 1.3;
 }
 
-/* === RODAPÉ (CORRIGIDO) === */
+/* === RODAPÉ === */
 .perfilFooter {
   height: 50px;
 
@@ -298,7 +298,7 @@
 
   width: 100%;
   box-sizing: border-box;
-  margin-top: auto; /* Faz colar no fundo */
+  margin-top: auto; 
 }
 
 .footerIcons {
@@ -312,7 +312,7 @@
   cursor: pointer;
 }
 
-/* Remove overflow global que quebrava o footer */
+
 html, body {
   margin: 0;
   padding: 0;

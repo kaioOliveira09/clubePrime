@@ -75,7 +75,7 @@ export default function AdminPage() {
             <div className={styles.headerRole}>Administrador</div>
           </div>
           
-          {/* 🚨 ALTERAÇÃO AQUI: Avatar do Usuário com Avatar.svg */}
+          {/* Avatar do Usuário com Avatar.svg */}
           <div className={styles.userAvatar} title="Perfil do Usuário"> 
             <img 
               src="/img/Avatar.svg" 
@@ -83,7 +83,7 @@ export default function AdminPage() {
               className={styles.avatarImage} 
             />
           </div>
-          {/* FIM DA ALTERAÇÃO */}
+          
           
         </div>
       </header>
@@ -135,7 +135,7 @@ export default function AdminPage() {
         </div>
       </main>
 
-      {/* FOOTER: Sem o Avatar.svg e com copyright centralizado */}
+      
       <footer className={styles.pageFooter}>
         <div className={styles.copy}>
           © 2024 Clube Prime - Todos os direitos reservados
