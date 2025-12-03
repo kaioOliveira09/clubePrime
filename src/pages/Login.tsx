@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import './login.css';
+import  './login.css';
 
 import { X, Instagram, Youtube, Linkedin } from 'lucide-react';
 

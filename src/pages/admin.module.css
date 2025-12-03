@@ -36,7 +36,7 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* Cores RGB: #d136f5 e #271df3 */
+    /* Cores RGB */
     background: linear-gradient(90deg, #d136f5, #271df3); 
     background-size: 300% 300%;
     animation: gradientMove 10s ease-in-out infinite;
@@ -116,15 +116,15 @@ body, html {
 .userAvatar {
     width: 40px; 
     height: 40px;
-    background: white; 
+    background: white; /* Alterado para branco ou cor neutra para a imagem SVG */
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; 
+    overflow: hidden; /* Importante para a imagem SVG */
 }
 
-/* Estilo para a imagem do Avatar */
+/* NOVO: Estilo para a imagem do Avatar */
 .avatarImage {
     width: 100%;
     height: 100%;
@@ -255,11 +255,10 @@ body, html {
 /* = RODAPÉ = */
 .pageFooter {
     height: 65px; 
-    /* 🚨 GRADIENTE RGB ADICIONADO AQUI */
+    /* Cores RGB */
     background: linear-gradient(90deg, #d136f5, #271df3); 
     background-size: 300% 300%;
     animation: gradientMove 10s ease-in-out infinite;
-    /* FIM DA ALTERAÇÃO */
     padding: 8px 30px; 
     display: flex;
     justify-content: space-between;
@@ -269,6 +268,7 @@ body, html {
     box-sizing: border-box;
 }
 
+/* RESTAURADO: Footer Copy sem o Avatar no lado esquerdo */
 .copy {
     color: white;
     font-size: 14px;
